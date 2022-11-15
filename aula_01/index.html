@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="compartilhado.css">
+
+    <style>
+        
+
+        
+
+        img {
+            width: 300px;
+            height:120px;
+        }
+
+        #meu_id{
+            border: 1px solid black;           
+        }
+        #borda_grossa{
+            border: 5px dashed rgb(109, 107, 212);
+
+        }
+        .remover_estilo{
+            text-decoration: none;
+        }
+        p:hover{
+            font-weight: bold;
+        }
+        .nomes_proprios:hover{
+            text-transform: capitalize;
+        }
+        #enviar{
+            background-color:blue;
+            border: 1px solid black;
+            border-radius: 10px;
+            padding: 8px ;
+            color:white;
+        }
+        #enviar:hover{
+            background-color: aqua;
+            color: black;
+            width: 300px;
+        }
+        #enviar::after{
+            content: "enviar"
+        }
+        enviar:hover::after{
+            content:"Geralmente ID é único então não use o id enviar em outro seletor, pfv";
+        }
+        
+    </style>
+</head>
+
+<body>
+    <a href="pagina3.html">Pagina 3</a>
+    
+    <a href="outra_pagina.html" target="_blank">vai para outra pagina por cima</a>
+    <a href="oliota.com" id="meu_id" class="remover_estilo">link do professor </a>
+
+    <p>sou um paragrafo</p>
+
+    <h1>sou um header grande</h1>
+
+    <img src="https://s.profissionaisti.com.br/wp-content/uploads/2012/06/gestao-tecnologia-servicos-ti.jpg" alt="">
+
+    <ul>
+        <li><i id="borda_grossa">italico</i></li>
+        <li><b class="remover_estilo">negrito</b></li>
+        <li><u class="remover_estilo">linha</u></li>
+        <li><s class="remover_estilo">riscado</s></li>
+    </ul>
+    <p>outro paragrafo</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+    <p>teste</p>
+
+
+    <p><u class="remover_estilo">sem underline</u></p>
+
+    <p><s id="unico">sou unico</s></p>
+
+    <h2 style="background-color: blueviolet; color:white">Titulo até que grande(Nubank)</h2>
+
+    <u style="text-decoration: none" >underline</u>
+    
+    <s style="text-decoration: none" >riscado</s>
+
+    <p class="nomes_proprios">bruno bond carrenho</p>
+
+    <p>BRUNO BOND CARRENHO</p>
+
+    <h4 id="enviar" ></h4>
+
+    
+
+
+</body>
+
+</html>
